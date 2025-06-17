@@ -264,6 +264,12 @@
 		<member name="scroll_to_selected" type="bool" setter="set_scroll_to_selected" getter="get_scroll_to_selected" default="true">
 			If [code]true[/code], the tab offset will be changed to keep the currently selected tab visible.
 		</member>
+		<member name="scroll_on_tab_close" type="bool" setter="set_scroll_on_tab_close" getter="get_scroll_on_tab_close" default="true">
+			If [code]true[/code], closing a tab will adjust the scroll position to keep the active tab visible. Disable to preserve the current scroll position when closing tabs.
+		</member>
+		<member name="is_closing_tab" type="bool" setter="set_is_closing_tab" getter="get_is_closing_tab" default="false">
+			Can be used with [code skip-lint]scroll_on_tab_close[/code] to know if the tab should scroll or not.
+		</member>
 		<member name="scrolling_enabled" type="bool" setter="set_scrolling_enabled" getter="get_scrolling_enabled" default="true">
 			if [code]true[/code], the mouse's scroll wheel can be used to navigate the scroll view.
 		</member>
