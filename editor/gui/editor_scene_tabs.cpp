@@ -418,6 +418,7 @@ EditorSceneTabs::EditorSceneTabs() {
 	scene_tabs->set_drag_to_rearrange_enabled(true);
 	scene_tabs->set_auto_translate_mode(AUTO_TRANSLATE_MODE_DISABLED);
 	scene_tabs->set_h_size_flags(Control::SIZE_EXPAND_FILL);
+	scene_tabs->set_scroll_to_selected(false);
 	tabbar_container->add_child(scene_tabs);
 
 	scene_tabs->connect("tab_changed", callable_mp(this, &EditorSceneTabs::_scene_tab_changed));
